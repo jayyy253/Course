@@ -52,6 +52,8 @@ nav li {
     margin-bottom: 10px; /* Adjust spacing between rows */
     flex: 0 0 45%; /* Each item takes up 45% of the container width */
     max-width: 300px; /* Set a maximum width for each item */
+    width: 200px; /* Set a fixed width for each item */
+    height: 50px; /* Set a fixed height for each item */
 }
 
 nav a {
