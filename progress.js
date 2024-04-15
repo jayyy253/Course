@@ -1,13 +1,13 @@
-document.addEventListener('DOMContentLoaded', function() {
+// Function to update progress percentage
+function updateProgress() {
     // Get total number of modules
-    var totalModules = 11;
-
-    // Get completed modules from local storage or initialize to 0
-    var completedModules = parseInt(localStorage.getItem('completedModules')) || 0;
-
+    const totalModules = 11; // Update this if the number of modules changes
     // Calculate progress percentage
-    var progressPercentage = (completedModules / totalModules) * 100;
+    const currentModule = parseInt(window.location.pathname.match(/\d+/)[0]); // Get current module number from URL
+    const progressPercentage = Math.floor((currentModule / totalModules) * 100);
+    // Display progress percentage
+    document.getElementById('progressPercentage').textContent = `Progress: ${progressPercentage}%`;
+}
 
-    // Update progress percentage element
-    document.getElementById('progressPercentage').textContent = Math.round(progressPercentage) + '%';
-});
+// Update progress when the page loads
+updateProgress();
