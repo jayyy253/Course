@@ -41,6 +41,10 @@ nav {
     padding: 10px 0;
 }
 
+nav ul {
+    list-style-type: none; /* Remove bullet points */
+}
+
 nav a {
     color: #fff; /* Change the color of the links */
     text-decoration: none !important; /* Remove underlines */
