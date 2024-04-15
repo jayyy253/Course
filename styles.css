@@ -64,6 +64,7 @@ nav a {
     border-radius: 5px; /* Add some rounded corners */
     background-color: #666; /* Add a background color to make the links stand out */
     width: 100%; /* Make the links fill the entire width of their parent */
+    height: 100%; /* Make the links fill the entire height of their parent */
 }
 
 /* Main content styles */
