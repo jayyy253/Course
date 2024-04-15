@@ -43,11 +43,24 @@ nav {
 
 nav ul {
     list-style-type: none; /* Remove bullet points */
+    display: flex; /* Use flexbox */
+    flex-wrap: wrap; /* Allow items to wrap onto multiple lines */
+    justify-content: space-evenly; /* Distribute items evenly along the main axis */
+}
+
+nav li {
+    margin-bottom: 10px; /* Adjust spacing between rows */
+    flex: 0 0 calc(50% - 10px); /* Each item takes up 50% of the container width with some margin */
 }
 
 nav a {
+    display: block; /* Make the links block elements to fill the space */
+    padding: 10px; /* Add padding to create space around the links */
     color: #fff; /* Change the color of the links */
     text-decoration: none !important; /* Remove underlines */
+    text-align: center; /* Center the text within each link */
+    border-radius: 5px; /* Add some rounded corners */
+    background-color: #666; /* Add a background color to make the links stand out */
 }
 
 /* Main content styles */
