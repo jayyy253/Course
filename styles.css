@@ -41,20 +41,7 @@ nav {
     padding: 10px 0;
 }
 
-.module-list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    list-style-type: none; /* Remove bullet points */
-    padding: 0;
-    margin: 0;
-}
-
-.module-list li {
-    margin-bottom: 10px; /* Adjust spacing between rows */
-}
-
-.module-list li a {
+nav a {
     color: #fff; /* Change the color of the links */
     text-decoration: none !important; /* Remove underlines */
 }
