@@ -1,9 +1,4 @@
-// Import the functions you need from the SDKs you need
-import { initializeApp } from "firebase/app";
-import { getAnalytics } from "firebase/analytics";
-
 // Your web app's Firebase configuration
-// For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
   apiKey: "AIzaSyBkzavGtc_WL0mqP_SC0CMpi-45MybYDMg",
   authDomain: "user-data-e96ed.firebaseapp.com",
@@ -15,8 +10,8 @@ const firebaseConfig = {
 };
 
 // Initialize Firebase
-const app = initializeApp(firebaseConfig);
-const analytics = getAnalytics(app);
+const app = firebase.initializeApp(firebaseConfig);
+const analytics = firebase.getAnalytics(app);
 
 function signup() {
   var newUsername = document.getElementById('newUsername').value;
@@ -46,7 +41,8 @@ document.getElementById('loginForm').addEventListener('submit', function(event) 
     .then((userCredential) => {
       // Logged in successfully
       alert('Login successful!');
-      // Redirect or do something else after successful login
+      // Redirect to mainpage.html on successful login
+      window.location.href = "mainpage.html";
     })
     .catch((error) => {
       // Handle errors
