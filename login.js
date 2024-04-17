@@ -1,18 +1,3 @@
-// Your web app's Firebase configuration
-const firebaseConfig = {
-  apiKey: "AIzaSyBkzavGtc_WL0mqP_SC0CMpi-45MybYDMg",
-  authDomain: "user-data-e96ed.firebaseapp.com",
-  projectId: "user-data-e96ed",
-  storageBucket: "user-data-e96ed.appspot.com",
-  messagingSenderId: "1066626734064",
-  appId: "1:1066626734064:web:ba3150781be7cf22422f35",
-  measurementId: "G-XTX9L4NJ2J"
-};
-
-// Initialize Firebase
-const app = firebase.initializeApp(firebaseConfig);
-const analytics = firebase.getAnalytics(app);
-
 function signup() {
   var newUsername = document.getElementById('newUsername').value;
   var newPassword = document.getElementById('newPassword').value;
